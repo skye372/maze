@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Bomberman.sln"
+    "dotnet.defaultSolution": "maze.sln"
 }
