@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class GoalDetector : MonoBehaviour
+public class PlayerDetector : MonoBehaviour
 {
+    public UnityEvent PlayerDetected;
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Player")) {
@@ -13,6 +15,6 @@ public class GoalDetector : MonoBehaviour
 
     private void NextLevel()
     {
-        Debug.Log("Player detected.");
+        PlayerDetected?.Invoke();
     }
 }
