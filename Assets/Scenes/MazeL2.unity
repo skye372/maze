@@ -4330,6 +4330,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e4daa5b53c78e4e9c9951bfe7a8505, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerDetected:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!58 &1515032729
 CircleCollider2D:
   m_ObjectHideFlags: 0
