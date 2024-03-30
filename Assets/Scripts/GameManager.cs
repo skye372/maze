@@ -45,5 +45,13 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-
+    public void NextLevel()
+    {
+       //buildIndex has to be smaller than the largest buildIndex
+       if (SceneManager.GetActiveScene().buildIndex < SceneManager.sceneCountInBuildSettings-1) 
+       {
+            //loading the next scene in the buildIndex
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1); 
+       } 
+    }
 }
