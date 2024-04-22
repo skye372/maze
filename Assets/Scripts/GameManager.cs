@@ -1,17 +1,23 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
-    public GameObject[] players;
+    public GameObject[] player;
+
 
     private void Awake()
     {
-        if (Instance != null) {
+        if (Instance != null)
+        {
             DestroyImmediate(gameObject);
-        } else {
+        }
+        else
+        {
             Instance = this;
             DontDestroyOnLoad(gameObject);
         }
@@ -21,14 +27,16 @@ public class GameManager : MonoBehaviour
     {
         int aliveCount = 0;
 
-        foreach (GameObject player in players)
+        foreach (GameObject player in player)
         {
-            if (player.activeSelf) {
+            if (player.activeSelf)
+            {
                 aliveCount++;
             }
         }
 
-        if (aliveCount <= 1) {
+        if (aliveCount <= 1)
+        {
             Invoke(nameof(NewRound), 3f);
         }
     }
@@ -37,5 +45,13 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-
+    public void NextLevel()
+    {
+       //buildIndex has to be smaller than the largest buildIndex
+       if (SceneManager.GetActiveScene().buildIndex < SceneManager.sceneCountInBuildSettings-1) 
+       {
+            //loading the next scene in the buildIndex
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1); 
+       } 
+    }
 }
