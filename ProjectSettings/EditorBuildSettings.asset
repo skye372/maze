@@ -9,9 +9,21 @@ EditorBuildSettings:
     path: Assets/Scenes/Bomberman.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 9fe9db8dc1d23754f8b872b4810f924f
+  - enabled: 1
+    path: Assets/Scenes/Won.unity
+    guid: 597f2fb4d7c6ea84082dddffb5667afe
+  - enabled: 1
     path: Assets/Scenes/MazeL1.unity
     guid: 884301e2e122875478cf8bee63ae9a0e
   - enabled: 1
+    path: Assets/Scenes/MazeL2.unity
+    guid: 865883c13c9b53448975c44962decde6
+  - enabled: 1
     path: Assets/Scenes/MazeL3.unity
     guid: aea3b3d1b82463f429b25b282c6fafb9
+  - enabled: 1
+    path: Assets/Scenes/MazeL4.unity
+    guid: 588c376258579744e879ab711a6d8ff4
   m_configObjects: {}
