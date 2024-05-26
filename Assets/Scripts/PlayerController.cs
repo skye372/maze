@@ -1,8 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-// it's a public class called MovementController that inherits from Monobehavior
-public class MovementController : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     // creating a private variable of class Rigidbody2D; the Rigidbody detects collision between objects
     private Rigidbody2D rb;
@@ -90,7 +89,7 @@ public class MovementController : MonoBehaviour
         }
     }
 
-    private void DeathSequence()
+    public void DeathSequence()
     {
         enabled = false;
         GetComponent<BombController>().enabled = false;
@@ -107,7 +106,7 @@ public class MovementController : MonoBehaviour
     private void OnDeathSequenceEnded()
     {
         gameObject.SetActive(false);
-        GameManager.Instance.CheckWinState();
+        GameManager.Instance.GameOver();
     }
 
 }
