@@ -430,6 +430,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3923161458913323903, guid: d5d9404779484614a901ecf8b85e3b9f, type: 3}
+      propertyPath: timeRemaining
+      value: 480
+      objectReference: {fileID: 0}
     - target: {fileID: 3923161459198055843, guid: d5d9404779484614a901ecf8b85e3b9f, type: 3}
       propertyPath: m_Pivot.x
       value: 0

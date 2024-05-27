@@ -326,7 +326,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3923161458913323903, guid: d5d9404779484614a901ecf8b85e3b9f, type: 3}
       propertyPath: timeRemaining
-      value: 240
+      value: 480
       objectReference: {fileID: 0}
     - target: {fileID: 3923161459198055843, guid: d5d9404779484614a901ecf8b85e3b9f, type: 3}
       propertyPath: m_Pivot.x
@@ -4377,7 +4377,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerDetected:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 339333480}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: NextLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!58 &1515032729
 CircleCollider2D:
   m_ObjectHideFlags: 0

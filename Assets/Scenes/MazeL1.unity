@@ -4477,6 +4477,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3923161458913323903, guid: d5d9404779484614a901ecf8b85e3b9f, type: 3}
+      propertyPath: timeRemaining
+      value: 480
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923161458913323903, guid: d5d9404779484614a901ecf8b85e3b9f, type: 3}
       propertyPath: playerController
       value: 
       objectReference: {fileID: 982796086}

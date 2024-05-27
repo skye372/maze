@@ -12,8 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/GameOver.unity
     guid: 9fe9db8dc1d23754f8b872b4810f924f
   - enabled: 1
-    path: Assets/Scenes/Won.unity
-    guid: 597f2fb4d7c6ea84082dddffb5667afe
+    path: Assets/Scenes/Menu.unity
+    guid: f001571daff4b814685ef58575d9cbd9
   - enabled: 1
     path: Assets/Scenes/MazeL1.unity
     guid: 884301e2e122875478cf8bee63ae9a0e
@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MazeL4.unity
     guid: 588c376258579744e879ab711a6d8ff4
+  - enabled: 1
+    path: Assets/Scenes/Won.unity
+    guid: 597f2fb4d7c6ea84082dddffb5667afe
   m_configObjects: {}

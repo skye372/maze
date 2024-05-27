@@ -7,7 +7,9 @@ public class Destructible : MonoBehaviour
     // creating a variable of type float to set the time how long it takes for this object to get destroyed (one second)
     public float destructionTime = 1f;
     [Range(0f, 1f)]
+    // creating a public variable of type float and assigning a value
     public float itemSpawnChance = 0.2f;
+    // creating a public array of type gameonject
     public GameObject[] spawnableItems;
 
     // creating a private method of type void, that gets called the very first frame the script gets enabled
@@ -22,6 +24,7 @@ public class Destructible : MonoBehaviour
         //SpawnItem();
     }
 
+    // habe mich umentschieden und es nicht im Spiel implementiert
     private void SpawnItem()
     {
         if (spawnableItems.Length > 0 && Random.value < itemSpawnChance)
